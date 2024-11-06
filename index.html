@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LYON Hotel Resort</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="app.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--Navigation Bar -->
+    <header>
+       
+            <nav class="nav__content">
+                <h1>Hotel Resort Lyon</h1>
+                <div class="burger" onclick="toggleMenu()">☰</div>
+                <ul class="nav-menu">
+                    <li><a href="#history">Istoria Hotelului</a></li>
+                    <li><a href="istoriahotel.html">Camere</a>
+                        <div class="dropdown">
+                            <a href="#rooms1">Room Type</a>
+                        </div>
+                    </li>
+                    <li><a href="pagina2.html">Restaurant</a></li>
+                    <li><a href="pagina2.html">Recenzii</a></li>
+                    <li><a href="pagina2.html">Contact</a></li>
+                </ul>
+            </nav>
+          
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <div class="hotel__hero">
+            <div class="hero-content">
+                <h1>Hotelul <br>visurilor tale</h1>
+                <div>Efectuează o înregistrare chiar acum! </div>
+                <button class="submit-button">check-in</button>
+            </div>
+        </div>
+        <div class="hotel-history" id="history">
+            <h2>Începuturile Hotelului</h2>
+            <p>Hotelul Resort Lyon a fost fondat în anul 1954 de familia Dupont, o familie cunoscută pentru tradiția sa în industria ospitalității. Inițial, hotelul a fost doar o mică pensiune, având doar 10 camere, dar cu timpul a devenit unul dintre cele mai apreciate locuri de cazare din Lyon.</p>
+    
+            <h2>Extinderea și Modernizarea</h2>
+            <p>În anii '70, hotelul a trecut printr-o perioadă de extindere semnificativă. S-au adăugat noi etaje și facilități, inclusiv un restaurant gourmet, care a devenit rapid unul dintre cele mai renumite din oraș. În perioada 2000-2010, hotelul a fost complet renovat, iar designul său a fost modernizat pentru a satisface cerințele oaspeților din secolul XXI.</p>
+    
+            <h2>Premii și Reconoscințe</h2>
+            <p>De-a lungul decadelor, Hotelul Resort Lyon a câștigat numeroase premii pentru serviciile sale excelente și pentru atmosfera de lux pe care o oferă. În 2015, a fost distins cu premiul „Cel mai bun hotel de 5 stele din Lyon” de către organizația turistică internațională, iar în 2018 a fost inclus în lista „Cele mai bune destinații pentru vacanțe de lux” de către revista Travel & Leisure.</p>
+    
+            <h2>Viziunea Viitorului</h2>
+            <p>Hotelul Resort Lyon continuă să își modernizeze facilitățile, având ca obiectiv să devină o destinație eco-friendly, prin implementarea de tehnologii verzi și prin promovarea turismului sustenabil. De asemenea, ne dorim să păstrăm tradiția de a oferi servicii de calitate superioară, pentru a asigura oaspeților o experiență de neuitat.</p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer></footer>
+
+    <script>
+        // JavaScript to the mobile menu
+        function toggleMenu() {
+            document.querySelector('.nav-menu').classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>

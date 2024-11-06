@@ -1,0 +1,237 @@
+
+body {
+    font-family: 'Epilogue', sans-serif;
+    margin: 0;
+}
+
+/* Header and Navbar */
+header {
+    width: 100%;
+    position: fixed;
+    background-color: #8db5e0;
+    padding: 10px 20px;
+    font-style: italic;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 3;
+}
+
+.nav__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.nav__content h1 {
+    margin: 0;
+    font-size: 1.75rem;
+}
+
+.burger {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Navbar list styling */
+nav ul.nav-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+    active
+}
+
+nav ul li {
+    position: relative;
+    font-size: 1rem;
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    border-radius: 8px;
+    min-width: 150px;
+    z-index: 1000;
+}
+
+/* Display dropdown on hover */
+nav ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown a {
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    color: #333;
+    white-space: nowrap;
+    font-style: italic;
+}
+
+.dropdown a:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Right-align last dropdown */
+nav ul li:last-child .dropdown {
+    right: 0;
+    left: auto;
+}
+
+/* Main Section with Hero Image */
+.hotel__hero {
+    background: url("images/background.png") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 0 20px;
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero-content h1 {
+    font-size: 68px;
+    margin: 0;
+}
+
+.hero-content div {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+.submit-button {
+    font-size: 16px;
+    padding: 15px 30px;
+    background-color: #efecf2;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #ddd;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #8db5e0;
+    text-align: center;
+    color: #fff;
+}
+
+/* Responsive Design */
+
+/* Tablet View */
+@media (max-width: 768px) {
+    header {
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .nav__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    nav ul.nav-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav__content h1 {
+        font-size: 1.5rem;
+    }
+
+    main {
+        padding: 20px;
+        height: calc(100vh - 120px);
+    }
+
+    .hero-content h1 {
+        font-size: 48px;
+        line-height: 1.2;
+    }
+
+    .hero-content div {
+        font-size: 24px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+/* Mobile View */
+@media (max-width: 480px) {
+    .nav__content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .burger {
+        display: block; /* Show burger icon on mobile */
+    }
+
+    nav ul.nav-menu {
+        display: none; /* Hide navbar links initially */
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Display menu when active */
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav__content h1 {
+        font-size: 1.25rem;
+    }
+
+    .hotel__hero {
+        padding: 0 20px;
+        height: 60vh;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+        text-align: center;
+        color: coral;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    }
+
+    .hero-content div {
+        font-size: 20px;
+    }
+
+    .submit-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
