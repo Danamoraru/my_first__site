@@ -1,12 +1,17 @@
 
+@import url('./null.style/style.css');
+html{
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Epilogue', sans-serif;
     margin: 0;
 }
 
-/* Header and Navbar */
+
 header {
     width: 100%;
+    max-width: 100%;
     position: fixed;
     background-color: #8db5e0;
     padding: 10px 20px;
@@ -36,14 +41,12 @@ header {
     cursor: pointer;
 }
 
-/* Navbar list styling */
 nav ul.nav-menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
     gap: 20px;
-    active
 }
 
 nav ul li {
@@ -51,21 +54,21 @@ nav ul li {
     font-size: 1rem;
 }
 
-/* Dropdown menu styling */
+
 .dropdown {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
     background-color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.100);
     padding: 10px 0;
     border-radius: 8px;
     min-width: 150px;
     z-index: 1000;
 }
 
-/* Display dropdown on hover */
+
 nav ul li:hover .dropdown {
     display: block;
 }
@@ -84,17 +87,24 @@ nav ul li:hover .dropdown {
     color: #333;
 }
 
-/* Right-align last dropdown */
+
 nav ul li:last-child .dropdown {
     right: 0;
     left: auto;
 }
 
-/* Main Section with Hero Image */
+
 .hotel__hero {
     background: url("images/background.png") no-repeat center center;
     background-size: cover;
     height: 100vh;
+}
+.hotel__display{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: #3a38387c;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -102,27 +112,30 @@ nav ul li:last-child .dropdown {
     color: white;
     padding: 0 20px;
 }
-
 .hero-content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
-
 .hero-content h1 {
-    font-size: 68px;
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    text-transform: uppercase;
     margin: 0;
+    color: rgb(234, 212, 212);
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(0, 255, 149), 0 0 5px rgb(139, 0, 0);
 }
-
-.hero-content div {
-    font-size: 36px;
-    margin: 10px 0;
+.h2{
+    font-size: 50px;
 }
 
 .submit-button {
     font-size: 16px;
     padding: 15px 30px;
-    background-color: #efecf2;
+    background-color: #e4cef9;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -134,16 +147,8 @@ nav ul li:last-child .dropdown {
 }
 
 /* Footer */
-footer {
-    padding: 20px;
-    background-color: #8db5e0;
-    text-align: center;
-    color: #fff;
-}
 
-/* Responsive Design */
 
-/* Tablet View */
 @media (max-width: 768px) {
     header {
         align-items: center;
@@ -187,7 +192,7 @@ footer {
     }
 }
 
-/* Mobile View */
+
 @media (max-width: 480px) {
     .nav__content {
         flex-direction: column;
@@ -196,16 +201,16 @@ footer {
     }
 
     .burger {
-        display: block; /* Show burger icon on mobile */
+        display: block; 
     }
 
     nav ul.nav-menu {
-        display: none; /* Hide navbar links initially */
+        display: none; 
         flex-direction: column;
         gap: 10px;
     }
 
-    /* Display menu when active */
+  
     .nav-menu.active {
         display: flex;
     }
@@ -222,7 +227,7 @@ footer {
     .hero-content h1 {
         font-size: 36px;
         text-align: center;
-        color: coral;
+        color: rgb(87, 0, 0);
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     }
 
@@ -235,3 +240,77 @@ footer {
         padding: 10px 20px;
     }
 }
+.logo-container{
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 10px;
+margin: 10px;
+height: 10vh;
+}
+.logo{
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+.hotel-history h3{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(26, 87, 161);
+}
+.hotel-history p{
+    width: 100%;
+    line-height: 140%;
+    font-size: 15px;
+    height: 300px;
+    box-shadow: 10px 10px 5px 12px rgb(43, 50, 52);
+    background-color: rgb(116, 188, 240);
+    padding: 20px 40px;
+    text-align: left;
+}
+
+.history__content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding-left: 30px;
+
+}
+.history__images {
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.history__picture{
+    width: 70%;
+    height: 70%;
+    position: relative;
+}
+.history__picture img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+.history__begining {
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    font-style: oblique;
+}
+.history__begining.colored{
+    box-shadow: 0 4px 8px rgba(49, 92, 157, 0.1);
+    background: rgba(149, 187, 233, 0.721);
+}
+
+v
