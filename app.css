@@ -13,7 +13,7 @@ header {
     width: 100%;
     max-width: 100%;
     position: fixed;
-    background-color: #8db5e0;
+    background-color: #d2deeb;
     padding: 10px 20px;
     font-style: italic;
     display: flex;
@@ -54,7 +54,13 @@ nav ul li {
     font-size: 1rem;
 }
 
-
+.home_page {
+    padding: 30px;
+ text-align: center;
+ font-size: 20px;
+ font-style: italic;
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 .dropdown {
     display: none;
     position: absolute;
@@ -239,7 +245,59 @@ nav ul li:last-child .dropdown {
         font-size: 14px;
         padding: 10px 20px;
     }
+
+   
+    .line-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 50px ;
+    
+    }
+    .line {
+        height: 5px;
+        font-size: 14px;
+        max-width: 150px;
+        background-color: rgb(186, 181, 181);
+        flex: 1;
+        padding: 2px;
+        border-radius: 50%;
+    
+    }
+    .slider{
+        display: flex;
+        overflow-x: auto;
+        scroll-snap-align: x mandatory;
+        background-attachment: scroll;
+    }
+    .slide{
+        min-width: 90vw;
+        padding: 0;
+        min-height: 80px
+        font-size: 30px;
+        scroll-snap-align: start;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .text-nav p{
+       text-align: center;
+       padding: 10px;
+
+
+    }
+ .slide:nth-child(1) images{
+        
+        width: 200%;
+        height: 100%;
+        background-size:  cover;
+    }
+    .slide:nth-child(2){
+        background-color: rgb(43, 134, 226);
+    }
+    
 }
+
 .logo-container{
 display: flex;
 justify-content: center;
@@ -253,42 +311,48 @@ height: 10vh;
     height: auto;
     margin-right: 10px;
 }
-.hotel-history h3{
-    font-size: 20px;
-    text-align: center;
-    text-shadow: 2px 2px 5px rgb(26, 87, 161);
-}
-.hotel-history p{
-    width: 100%;
-    line-height: 140%;
-    font-size: 15px;
-    height: 300px;
-    box-shadow: 10px 10px 5px 12px rgb(43, 50, 52);
-    background-color: rgb(116, 188, 240);
-    padding: 20px 40px;
-    text-align: left;
-}
 
 .history__content {
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    padding-left: 30px;
-
+    padding: 10px;
+    gap: 10px;
 }
-.history__images {
+.grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns:  1fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+.hotel_future{
     width: 100%;
-    height: 100%;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: 10px 10px 5px 12px rgb(43, 50, 52);
+    background-color: rgb(116, 188, 240);
+    padding: 20px 40px;
+    text-align: left;
 }
+    .hotel_future:hover{
+        background-color: rgb(95, 137, 200);
+
+    }
+
+.hotel-history h3{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 5px rgb(26, 87, 161);
+}
+.hotel-history p{
+    line-height: 140%;
+    font-size: 15px;
+    text-align: left;
+}
+
 .history__picture{
-    width: 70%;
-    height: 70%;
+    width: 100%;
+    height: 70vh;
     position: relative;
 }
 .history__picture img{
@@ -296,8 +360,9 @@ height: 10vh;
     height: 100%;
     border-radius: 50%;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
     object-fit: cover;
 }
 .history__begining {
@@ -312,5 +377,3 @@ height: 10vh;
     box-shadow: 0 4px 8px rgba(49, 92, 157, 0.1);
     background: rgba(149, 187, 233, 0.721);
 }
-
-v
