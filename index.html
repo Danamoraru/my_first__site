@@ -4,22 +4,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>LYON Hotel Resort</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="app.css">
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
     <!--Navigation Bar -->
     <header>
+       
             <nav class="nav__content">
                 <h1>Hotel Resort Lyon</h1>
                 <div class="burger" onclick="toggleMenu()">☰</div>
                 <ul class="nav-menu">
                     <li><a href="index.html">Pagina principală</a></li> 
-                    <li><a href="#history">Istoria Hotelului</a></li>
+                    <li><a href="istorie.html">Istoria Hotelului</a></li>
                     <li><a href="#camere">Camere</a>
                         <div class="dropdown">
                             <a href="#rooms1">Room Type</a>
@@ -37,63 +40,148 @@
         <div class="hotel__hero">
             <div class="hotel__display">
                 <div class="hero-content">
-                    <h1>Hotel Resort <br>LYON</h1>
-                    <h2>Efectuează o înregistrare chiar acum! </h2>
+                    <h2>Hotel Resort <br>LYON</h2>
+                    <h3>Efectuează o înregistrare chiar acum! </h3>
                     <button class="submit-button">check-in</button>
                 </div>
             </div>
         </div>
+        </div>
         <div class="home_page">
-            <h1>Alegerea corectă pentru o călătorie perfectă</h1>
-            <div class="line-container">
-                <div class="line">
-                </div>
-                    <div class="text-nav">
-                        <p>Bine ați venit la Villa Pliniana, un palat Italian din secolul al 16-lea uimitor, situat pe malul lacului, pe legendarul lac Como. Proprietatea privată Lyon are 17 dormitoare, un doc privat pentru bărci, o platformă de aterizare pentru elicoptere, un centru spa, grădini vaste și servicii LyonHotels.</p>
+            <h4>-Alegerea corectă pentru o călătorie perfectă-</h4>
+          <div class="heart">
+            <i class='bx bx-calendar-heart'></i>
+        </div>
+            <div class="text-page">
+                        <p>Bine ați venit la hotelul "Lyon", un palat Italian din secolul al 16-lea uimitor,<br> situat pe malul lacului, Como. Proprietatea privată Lyon are 17 dormitoare,<br> un doc privat pentru bărci, o platformă de aterizare pentru elicoptere,<br> un centru spa și grădini vaste.</p>
                     </div>
-                </div>
-                </div>
-            </div>
-        </div>
-        <div class="hotel-history" id="history">
-        <div class="logo-container">
-            <img src="images/logo.jpg" alt="logo" class="logo">
-        </div>
-        <div class="slider">
-            <div class="slide"><img src="images/photo-lion.jpg" alt=""></div>
-            <div class="slide"><img src="images/room2.webp" alt=""></div>
-            <div class="slide"><img src="images/room3.jpg" alt=""></div>
-            <div class="slide"><img src="images/room4.jpg" alt=""></div>
-             </div>
-        <div class="history__begining colored">
-                <div class="history__content">
-                    <div class="grid">
-                        <div class="hotel_future" id="future">
-                                <h3>Începuturile</h3>
-                                <p>Povestea Hotelului Lyon Resort începe la începutul secolului XX cu o frumoasă clădire cu două etaje situată în inima Chișinăului. Fotografiile vechi, datând încă din 1903, arată această structură istorică, care găzduia și un hotel numit „Passage”. La scurt timp după aceea, hotelul a fost redenumit „Lyon”.</p>
+                    <div class="text-page2">
+                        <div class="semn">
+                            <i class='bx bxs-quote-alt-left'></i>
                         </div>
-                        <div class="hotel_future" id="future">
-                                <h3>Începuturile Hotelului</h3>
-                                <p>Hotelul Resort Lyon a fost fondat în anul 1954 de familia Dupont, o familie cunoscută pentru tradiția sa în industria ospitalității. Inițial, hotelul a fost doar o mică pensiune, având doar 10 camere, dar cu timpul a devenit unul dintre cele mai apreciate locuri de cazare din Lyon.În anii '70, hotelul a trecut printr-o perioadă de extindere semnificativă. S-au adăugat noi etaje și facilități, inclusiv un restaurant gourmet, care a devenit rapid unul dintre cele mai renumite din oraș. În perioada 2000-2010, hotelul a fost complet renovat, iar designul său a fost modernizat pentru a satisface cerințele oaspeților din secolul XXI.</p>
-                        </div>
+                        <p>Simțiți-vă ca acasă la Vila Pliniana,<br> unde vă oferim intimitatea și spațiul unei locuințe private, combinate cu serviciul de cinci stele al unei proprietăți de lux.</p>
                     </div>
-                </div>
-           
-         
+                    <div class="semn">
+                        <i class='bx bxs-quote-alt-right'></i>
+                    </div>
+                    <div class="service-text">
+                        <h6>Servicii incluse:</h6>
+                    </div>
+              <div class="services-container">
+        <div class="service-block">
+            <div class="icon">
+                <i class='bx bxs-pizza'></i>
+            </div>
+            <div class="text">
+                <strong>Mic Dejun Zilnic / Bucătărie</strong><br>
+                Bucurați-vă de un mic dejun gratuit zilnic. Bucătar privat pe proprietate.
             </div>
         </div>
-        </div>
-        <div class="hotel-rooms" id="camere">
-            <div class="logo-container">
-                <img src="images/logo.jpg" alt="" class="logo">
+        <div class="service-block">
+            <div class="icon">
+                <i class='bx bxs-user-check'></i>
             </div>
-            <h4>Camere</h4>
+            <div class="text">
+                <strong>Personalul Hotelului Devotat</strong><br>
+                Curățenie zilnică și servicii de concierge. Asistentul personal de oaspeți, care vă va sugera și rezerva excursii și evenimente.
+            </div>
         </div>
+        
+        <div class="service-block">
+            <div class="icon">
+                <i class='bx bxs-spa'></i>
+            </div>
+            <div class="text">
+                <strong>Spa și Piscină</strong><br>
+                Spa și piscină privată, cu saună, baie de aburi și dușuri.
+            </div>
+        </div>
+        <div class="service-block">
+            <div class="icon">
+                <i class='bx bxs-bed'></i>
+            </div>
+            <div class="text">
+                <strong>Pat pentru copii</strong><br>
+                Inclusiv pătuțuri și plăci de protecție.
+            </div>
+        </div>
+        <div class="service-block">
+            <div class="icon">
+                <i class='bx bxs-plane-land'></i>
+            </div>
+            <div class="text">
+                <strong>Heliport</strong><br>
+                Heliport privat în incinta vilei.
+            </div>
+        </div>
+        <div class="service-block">
+            <div class="icon">
+                <i class='bx bx-wifi'></i>
+            </div>
+            <div class="text">
+                <strong>Wi-Fi</strong><br>
+                Internet wireless în bandă largă în întreaga vilă.
+            </div>
+        </div>
+        <div class="service-block">
+            <div class="icon">
+                <i class='bx bx-globe'></i>
+            </div>
+            <div class="text">
+                <strong>Cea Mai Recentă Tehnologie</strong><br>
+                Aer condiționat complet și încălzire centrală cu senzori moderni.
+            </div>
+        </div>
+        <div class="service-block">
+            <div class="icon">
+                <i class='bx bxs-car'></i>
+            </div>
+            <div class="text">
+                <strong>Parcare interioară și cărucior de Golf</strong><br>
+                Facilități în vilă și acces la coșul de golf.
+            </div>
+        </div>
+    </div>
+              </div>
+        
+        </div>
+        </div>
+        </div>
+        
     </main>
     
   
     <!-- Footer -->
-    <footer></footer>
+        <footer class="footer">
+                <div class="footer-logo">
+                    <img src="images/logo-imag.png" class="footer-logo">
+                </div>
+                <div class="footer-contact">
+                    <h3>Contact Us</h3>
+                    <p>
+                        Email: lyon@gmail.com<br>
+                        Telefon: +123 456 7890<br>
+                        Adresa: Vico Ferrovia 6, 80142 Napoli, Italy
+                    </p>
+                </div>
+                <div class="footer-links">
+                    <h3></h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Urmărește-ne</h3>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class='bx bxl-facebook'></i></a></li>
+                        <li><a href="#"><i class='bx bxl-twitter'></i></a></li>
+                        <li><a href="#"><i class='bx bxl-instagram'></i></a></li>
+                    </ul>
+                </div>
+    </footer>
 
     <script>
         // JavaScript to the mobile menu
